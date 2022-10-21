@@ -19,7 +19,8 @@ export default {
     :show="showToast"
     title="Oops"
     @hide="showToast = false"
-    type="warning"
+    type="success"
+    position="bottom-right"
   />
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-    <div class="toast bottom-left" :class="toastClasses" v-show="show">
+    <div class="toast" :class="toastClasses" v-show="show">
         <div class="toast-icon">
             <component :is="toastIcon"></component>
         </div>
@@ -207,6 +207,6 @@ export default {
 .top-right {
     position: fixed;
     right: 20px;
-    bottom: 20px;
+    top: 20px;
 }
 </style>
