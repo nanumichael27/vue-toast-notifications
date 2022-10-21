@@ -20,7 +20,7 @@ export default {
     title="Oops"
     @hide="showToast = false"
     type="success"
-    position="bottom-right"
+    position="top-left"
   />
 </template>
 
