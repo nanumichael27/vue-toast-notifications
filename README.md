@@ -2,7 +2,7 @@
 
 This is a Project demonstrating toast notifications making use of vue.js as a base framework, Developed by Nanotek.
 
-Visit [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to see to view this project.
+Visit [Vue.js toast notifications](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to see to view this project.
 
 ## Recommended IDE Setup
 
