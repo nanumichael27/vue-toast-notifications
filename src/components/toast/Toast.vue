@@ -1,5 +1,5 @@
 <template>
-    <div class="toast" :class="toastType" v-show="show">
+    <div class="toast bottom-left" :class="toastClasses" v-show="show">
         <div class="toast-icon">
             <component :is="toastIcon"></component>
         </div>
@@ -51,6 +51,10 @@ export default {
                 return ['success', 'warning', 'error']
                 .indexOf(value) !== -1;
             }
+        },
+        position: {
+            type: String,
+            default: 'bottom-right',
         }
     },
     components: {
@@ -75,6 +79,15 @@ export default {
             return this.title? this.title: 
             this.type.charAt(0).toUpperCase()
             + this.type.slice(1);
+        },
+        getPosition(){
+            return ['bottom-left', 'bottom-right', 'top-left', 'top-right']
+                .indexOf(this.position) === -1 
+                ? 'bottom-right'
+                : this.position
+        },
+        toastClasses() {
+            return [this.toastType, this.getPosition]
         }
     }
 }
@@ -171,5 +184,29 @@ export default {
 
 .toast-button:hover{
     opacity: 1;
+}
+
+.bottom-left {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+}
+
+.top-left {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+}
+
+.bottom-right {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.top-right {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
 }
 </style>
