@@ -1,6 +1,8 @@
-# Vue 3 + Vite
+# Toast notification making use of vue.js options API
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This is a Project demonstrating toast notifications making use of vue.js as a base framework, Developed by Nanotek.
+
+Visit [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to see to view this project.
 
 ## Recommended IDE Setup
 
